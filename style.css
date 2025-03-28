@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "bebas neue", cursive;
+}
+
+.container {
+    max-width: 500vw;
+    margin: 0 auto;
+    background: red;
+    height: 100vh;
+    background-image: url(img/jj.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile>img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #222;
+    border-radius: 100%;
+}
+
+.profile>p {
+    font: solid;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: black;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.link>a {
+    text-decoration: none;
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid #222;
+    background-color: #130d0caa;
+    color: rgb(218, 204, 5);
+    border-radius: 25px;
+    margin: 5px 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.4s ease-in;
+}
+
+.link>a:hover {
+    background-color: rgba(50, 144, 149, 0.548);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer>i {
+    color: white;
+    font-size: 20px;
+}
+
+svg {
+    margin-right: 10px;
+}
+
+#backgroundContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 1s ease-in-out;
+    /* Transisi halus untuk perubahan gambar */
+}
